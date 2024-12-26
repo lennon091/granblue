@@ -1,0 +1,241 @@
+
+body{
+    background-image:url('components/imagens/logo.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+          
+}
+
+.logomain {
+    display: block;
+    margin: 0 auto;
+    width: 375px;
+    height: auto;
+    border-radius: 20px;
+    margin-bottom: 20px; /* Espaço entre a logo e o menu de navegação */
+   
+}
+
+.icone-esquerdo{
+    position: absolute;
+    top: 24%; /* Alinha os ícones verticalmente no meio do header */
+    transform: translateY(-50%); /* Ajusta para o centro exato */
+    width: 180px;
+}
+.icone-direito {
+    position: absolute;
+    top: 30%; /* Alinha os ícones verticalmente no meio do header */
+    transform: translateY(-50%); /* Ajusta para o centro exato */
+    width: 180px;
+}
+
+.icone-esquerdo {
+    left: 20px; /* Define a posição à esquerda */
+}
+
+.icone-direito {
+    right: 20px; /* Define a posição à direita */
+}
+
+
+/*main{
+    background-color: #252525;
+}*/
+
+main p{
+    color: #F0E68C;
+    font-family:"MedievalSharp", cursive;
+    margin:10px;
+    background-color: #612802;
+    text-align:center;
+    padding: 8px;
+    width: 200px;
+    height: 50%;
+    border-radius: 5px;
+    box-shadow:4px 4px 10px black;
+   
+}
+
+main h2{
+    color: #F0E68C;
+    font-family:"MedievalSharp", cursive;
+    margin:10px;
+    font-size: large;
+    font-weight: bold;
+}
+
+.title{
+    background-color: #612802;
+    padding: 8px;
+    border-radius: 5px;
+    box-shadow:4px 4px 10px black;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul{
+    display: flex; /* Alinha os itens do menu em linha */
+    justify-content: center; /* Centraliza os itens no contêiner */
+    gap: 20px; /* Espaçamento entre os links */
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o padding padrão */
+    margin: 0; /* Remove a margem padrão */
+               
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #F0E68C;
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: none;
+    font-family: "MedievalSharp", cursive;
+    background-color: #612802;
+    padding: 10px 35px;
+    border-radius: 10px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+nav a:hover{
+    background-color: rgb(3, 29, 0); /* Cor ao passar o mouse */
+    transform: scale(1.05); /* Leve aumento ao passar o mouse */
+    
+}
+
+
+.classes {
+    display: flex; /* Ativa o Flexbox */
+    /*flex-wrap: wrap; */
+    justify-content: center; /* Centraliza os itens na linha */
+    gap: 20px; /* Espaço entre os itens */
+    margin: 0px; /* Adiciona margem ao redor */
+    padding: 0px; /* Remove padding padrão */
+    list-style: none; /* Remove marcadores da lista */
+}
+
+.classes li {
+    display: inline-flex; /* Garante que o conteúdo interno esteja alinhado */
+    flex-direction:column; /* Alinha conteúdo verticalmente */
+    align-items: center; /* Centraliza os itens no centro */
+    width: 220px; /* Define uma largura fixa */
+    height:450px;
+    text-align: center; /* Centraliza o texto */
+    margin: 80px; /* Espaço ao redor de cada item */
+    background-color: #535252; /* Cor de fundo para visualização */
+    padding: 10px; /* Espaço interno */
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); /* Sombras */
+    border:5px  solid #612802;
+
+}
+
+.img-classe {
+    width: 100%; /* Faz a imagem ocupar toda a largura do item */
+    max-width: 200px; /* Define um tamanho máximo */
+    height: auto; /* Mantém a proporção */
+    margin-bottom: 10px; /* Espaço abaixo da imagem */
+}
+
+.botao{
+    margin-top: auto;
+    margin-block-end: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    color:black;
+    font-weight: bold;
+    font-size: 14px;
+    outline: none;
+    cursor: pointer;
+    
+}
+.botao:hover{
+    background-color: rgb(161, 248, 161);
+}
+.botao:active{
+    transform: scale(0.95); /* Reduz ligeiramente o tamanho */
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.5); /* Adiciona sombra interna */
+}
+
+footer {
+    background-color: #1e1e1e; /* Cor do fundo */
+    color: #f0e68c; /* Cor do texto */
+    font-family: 'MedievalSharp', cursive;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex; /* Alinha as seções horizontalmente */
+    justify-content: space-around; /* Espaço entre as seções */
+    align-items: center; /* Alinha ao topo */
+    flex-wrap: wrap; /* Permite quebra em telas menores */
+    max-width: 1200px;
+    margin: 0 auto; /* Centraliza o conteúdo */
+    padding: 10px;
+}
+
+.footer-section {
+    flex: 1; /* Cada seção ocupa o mesmo espaço */
+    margin: 10px;
+    min-width: 250px; /* Garante boa aparência em telas menores */
+}
+
+.footer-section h2,
+.footer-section h3 {
+    margin-bottom: 15px;
+    color: #d4af37; /* Destaque para os títulos */
+}
+
+.footer-section ul {
+    list-style: none; /* Remove os marcadores */
+    padding: 0;
+}
+
+.footer-section ul li a {
+    color: #f0e68c;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #d4af37; /* Cor ao passar o mouse */
+    
+}
+
+.social-icons a img {
+    width: 32px;
+    height: 32px;
+    margin: 0 5px;
+    transition: transform 0.3s;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.2); /* Zoom ao passar o mouse */
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #d4af37;
+    color: #d4af37;
+    font-size: 14px;
+}
+
+
+
+  
